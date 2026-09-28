@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Técnicas Computacionais | IA na Escola</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="particulas">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <header>
+        <div class="logo">
+            TEC<span>.IA</span>
+        </div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#reflexao">Reflexão</a>
+            <a href="#quiz">Quiz</a>
+        </nav>
+    </header>
+
+    <!-- INÍCIO -->
+    <section class="hero" id="inicio">
+
+        <div class="hero-content">
+
+            <div class="tag">
+                TÉCNICAS COMPUTACIONAIS • EDUCAÇÃO • TECNOLOGIA
+            </div>
+
+            <h1>
+                Inteligência<br>
+                Artificial na Escola
+            </h1>
+
+            <p>
+                A tecnologia está transformando a maneira como
+                aprendemos, pesquisamos e criamos.
+                Mas até onde devemos confiar na Inteligência Artificial?
+            </p>
+
+            <a href="#reflexao" class="btn">
+                Explorar o tema ↓
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- IA NA EDUCAÇÃO -->
+    <section>
+
+        <div class="titulo">
+
+            <h2>IA na educação</h2>
+
+            <p>
+                Alguns pontos importantes para refletirmos.
+            </p>
+
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="icone">🤖</div>
+
+                <h3>O que é IA?</h3>
+
+                <p>
+                    Inteligência Artificial é um conjunto de tecnologias
+                    capazes de realizar tarefas que normalmente exigiriam
+                    capacidades humanas.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <div class="icone">📚</div>
+
+                <h3>Aprendizagem</h3>
+
+                <p>
+                    Ferramentas de IA podem ajudar estudantes a compreender
+                    conteúdos, encontrar explicações e organizar seus estudos.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <div class="icone">🧠</div>
+
+                <h3>Pensamento crítico</h3>
+
+                <p>
+                    Usar IA também exige questionar as respostas,
+                    verificar informações e compreender que uma ferramenta
+                    pode cometer erros.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- REFLEXÃO -->
+    <section id="reflexao">
+
+        <div class="reflexao">
+
+            <h2>💭 Uma questão para pensar</h2>
+
+            <p>
+                A Inteligência Artificial pode ser uma ferramenta poderosa
+                dentro da escola. Porém, aprender não significa apenas obter
+                uma resposta pronta.
+            </p>
+
+            <br>
+
+            <p>
+                Aprender também envolve pesquisar, experimentar,
+                questionar, criar e desenvolver autonomia.
+            </p>
+
+            <br>
+
+            <p class="pergunta-reflexao">
+                Como podemos utilizar a IA para aprender melhor
+                sem deixar que ela pense por nós?
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- POSSIBILIDADES -->
+    <section>
+
+        <div class="titulo">
+
+            <h2>Possibilidades e cuidados</h2>
+
+            <p>
+                Usar tecnologia também significa usá-la com responsabilidade.
+            </p>
+
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="icone">✨</div>
+
+                <h3>Possibilidades</h3>
+
+                <p>
+                    Personalização dos estudos, apoio na escrita,
+                    geração de ideias e auxílio na organização.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <div class="icone">⚠️</div>
+
+                <h3>Cuidados</h3>
+
+                <p>
+                    Respostas incorretas, dependência excessiva,
+                    informações sem fonte e questões de privacidade.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <div class="icone">🔎</div>
+
+                <h3>Verificação</h3>
+
+                <p>
+                    Compare informações e consulte fontes confiáveis
+                    antes de aceitar uma resposta produzida por IA.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- QUIZ -->
+    <section id="quiz">
+
+        <div class="titulo">
+
+            <h2>🎮 Desafio IA na Escola</h2>
+
+            <p>
+                Teste seus conhecimentos!
+            </p>
+
+        </div>
+
+        <div class="quiz-box">
+
+            <div class="progresso">
+                <div id="barra"></div>
+            </div>
+
+            <div id="quizConteudo">
+
+                <div id="numero"></div>
+
+                <h3 id="pergunta"></h3>
+
+                <div
+                    class="opcoes"
+                    id="opcoes">
+                </div>
+
+                <div id="feedback"></div>
+
+                <button
+                    class="btn"
+                    id="proxima"
+                    onclick="proximaPergunta()">
+
+                    Próxima pergunta →
+
+                </button>
+
+            </div>
+
+            <!-- RESULTADO -->
+
+            <div id="resultado">
+
+                <h2>🎉 Quiz concluído!</h2>
+
+                <div id="pontuacao">
+                    0/5
+                </div>
+
+                <p id="mensagem"></p>
+
+                <button
+                    class="btn"
+                    onclick="reiniciar()">
+
+                    Jogar novamente
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>
+            💜 Técnicas Computacionais —
+            Refletindo sobre Inteligência Artificial na Escola
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
